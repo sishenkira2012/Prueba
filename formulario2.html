@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+
+    <!-- Hojas css -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>  
+  </head>
+
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i> RA16069</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tabla.html">Tabla</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="formulario.html">Formulario</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <!-- Contenido de la página -->
+    <div class="container">
+      <h1>Formulario</h1>
+      <small class="text-danger">* Obligatorio</small>
+
+      <form id="formEstudiante" action="" method="GET">
+        <div class="form-row">
+          <!-- Nombre -->
+          <div class="form-group col-md-6">
+            <label for="nombre">Nombre: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+          </div>
+
+          <!-- Apellido -->
+          <div class="form-group col-md-6">
+            <label for="apellido">Apellido: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
+          </div>      
+        </div>
+         
+        <div class="form-row">
+          <!-- Carrera -->
+          <div class="form-group col-md-6">
+            <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
+            <select class="form-control" name="carrera" id="carrera">
+              <option value="" disabled selected>Seleccione una carrera</option>
+              <option value="ingSistemas">Ing. alimentos</option>
+              <option value="ingIndustrial">Ing. civil</option>
+              <option value="ingElectrica">Ing. sistemas</option>
+            </select>
+          </div>
+
+          <!-- Sexo -->
+          <div class="form-group col-md-6">
+            <label for="sexo">Sexo: <span class="text-danger">*</span></label>
+
+            <div>
+              <!-- Radiobutton masculino -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="M" name="sexo" value="M" checked>
+                <label class="form-check-label" for="M">Masculino</label>
+              </div>            
+
+              <!-- Radiobutton femenino -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="F" name="sexo" value="F">
+                <label class="form-check-label" for="F">Femenino</label>
+              </div>      
+            </div>                  
+          </div>         
+        </div>
+
+        <div class="float-right">
+           <!-- Botón de limpiar -->
+          <button id="btnLimpiar" class="btn btn-outline-dark" type="button">Limpiar</button>
+
+          <!-- Botón de submit -->
+          <button class="btn btn-dark" type="submit">Enviar</button>
+        </div>       
+      </form>
+    </div>    
+
+
+
+    <!-- Scripts js -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script formulario -->
+    <script src="js/formulario.js"></script>
+  </body>
+</html>
